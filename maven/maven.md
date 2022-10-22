@@ -17,13 +17,13 @@
 
 - 统一开发结构
 
-  ![](.\images\maven统一结构.png)
+  ![](./images/maven统一结构.png)
 
 
 
 蓝色框内代表maven
 
-![](.\images\maven.png)
+![](./images/maven.png)
 
 Maven本质上是一个插件框架，并不执行任何具体的构建任务，它把所有这些任务都交给插件来完成。
 
@@ -46,7 +46,7 @@ mvn [plugin-name]:[goal-name]
 1. 下载
 2. 配置JAVA_HOEM
 3. 配置MAVEN_HOME
-4. path中添加%MAVEN_HOME%\bin
+4. path中添加%MAVEN_HOME%/bin
 
 
 
@@ -92,13 +92,13 @@ mvn [plugin-name]:[goal-name]
 
 ### 配置本地仓库
 
-默认地址为C:\Users\18837\.m2
+默认地址为C:/Users/18837/.m2
 
-可在E:\apache-maven-3.8.6\conf\settings.xml中更改
+可在E:/apache-maven-3.8.6/conf/settings.xml中更改
 
 加上此行即可
 
-![](.\images\更改仓库位置.png)
+![](./images/更改仓库位置.png)
 
 
 
@@ -117,7 +117,7 @@ mvn [plugin-name]:[goal-name]
 </mirror>
 ~~~
 
-![](.\images\切换源.png)
+![](./images/切换源.png)
 
 ## 5.maven工程
 
@@ -125,7 +125,7 @@ mvn [plugin-name]:[goal-name]
 
 即开发一个项目要需要经历的过程
 
-![](.\images\项目构建生命周期.png)
+![](./images/项目构建生命周期.png)
 
 ### 5.1.maven工程结构
 
@@ -133,7 +133,7 @@ mvn [plugin-name]:[goal-name]
 
 1. 目录文件，存储代码
 
-   ![](.\images\maven工程结构.png)
+   ![](./images/maven工程结构.png)
 
 2. pom.xml文件
 
@@ -151,17 +151,17 @@ mvn [plugin-name]:[goal-name]
 
 配置用户设置（默认.m2中的settings.xml）
 
-![](.\images\IDEAmaven配置.png)
+![](./images/IDEAmaven配置.png)
 
 ##### 给项目导入maven模块
 
 在左上角new选择module（也可在创建项目时直接选择创建maven项目）
 
-![](.\images\idea添加maven模块.png)
+![](./images/idea添加maven模块.png)
 
 ##### 创建快捷maven命令
 
-![](.\images\创建快捷maven命令.png)
+![](./images/创建快捷maven命令.png)
 
 
 
@@ -173,7 +173,7 @@ mvn [plugin-name]:[goal-name]
 
 [Spring Initializr](https://start.spring.io/)
 
-![脚手架](.\images\spring initializr.png)
+![脚手架](./images/spring initializr.png)
 
 1. 选择maven项目，jdk版本，SpringBoot版本等
 2. 右侧添加依赖，常用的有如图的三个
@@ -209,7 +209,7 @@ mvn [plugin-name]:[goal-name]
 mvn -help
 ~~~
 
-![查看帮助文档](.\images\mvn -help.png)
+![查看帮助文档](./images/mvn -help.png)
 
 
 
@@ -219,7 +219,7 @@ mvn -help
 mvn -v
 ~~~
 
-![查看maven版本](.\images\mvn -v.png)
+![查看maven版本](./images/mvn -v.png)
 
 
 
@@ -229,7 +229,7 @@ mvn -v
 mvn compile
 ~~~
 
-![编译源代码](.\images\mvn compile.png)
+![编译源代码](./images/mvn compile.png)
 
 
 
@@ -247,13 +247,13 @@ mvn compile
 mvn test-compile
 ~~~
 
-![编译测试源代码](.\images\mvn test-compile.png)
+![编译测试源代码](./images/mvn test-compile.png)
 
 
 
 **效果：**
 
-target\test-classes目录下会有编译生成的 .class文件
+target/test-classes目录下会有编译生成的 .class文件
 
 
 
@@ -270,7 +270,7 @@ mvn verify
 - 是否能打包
 - 等等等
 
-![运行检查](.\images\mvn verify.png)
+![运行检查](./images/mvn verify.png)
 
 
 
@@ -289,14 +289,14 @@ maven-surefire-plugin 的test目标会自动执行测试源码路径下符合命
 默认测试源代码路径： src/test/java/
 
 测试类命名模式：
-\*\*/Test\*.java
-\*\*/\*Test.java
-\*\*/\*TestCase.java
+/*/*/Test/*.java
+/*/*//*Test.java
+/*/*//*TestCase.java
 
 按上述模式命名的类， 使用 mvn test 命令就能自动运行他们。
 
 
-![运行测试代码](.\images\mvn test.png)
+![运行测试代码](./images/mvn test.png)
 
 
 
@@ -316,13 +316,13 @@ mvn package
 
 **打包后的target目录**
 
-![打包后的target目录](.\images\打包后的target目录.png)
+![打包后的target目录](./images/打包后的target目录.png)
 
 [springboot项目用maven打包生成的.jar.original是什么？](https://blog.csdn.net/wupan6688/article/details/103629664)
 
 
 
-![项目打包命令](.\images\mvn package.png)
+![项目打包命令](./images/mvn package.png)
 
 
 
@@ -356,13 +356,13 @@ target目录中生成了jar文件：demo-0.0.1-SNAPSHOT.jar
 mvn install
 ~~~
 
-![本地Repository中安装jar](.\images\mvn install.png)
+![本地Repository中安装jar](./images/mvn install.png)
 
 
 
 **效果**
 
-![本地repository](.\images\本地repository.png)
+![本地repository](./images/本地repository.png)
 
 
 
@@ -374,7 +374,7 @@ mvn source:jar
 
 target目录中生成 demo-0.0.1-SNAPSHOT-sources.jar,包含源代码
 
-![生成源码jar包](.\images\mvn source_jar.png)
+![生成源码jar包](./images/mvn source_jar.png)
 
 
 
@@ -382,15 +382,15 @@ target目录中生成 demo-0.0.1-SNAPSHOT-sources.jar,包含源代码
 
 执行命令前，target目录下生成了很多文件，都是之前执行命令生成的。
 
-![上述生成的所有文件](.\images\上述生成的所有文件.png)
+![上述生成的所有文件](./images/上述生成的所有文件.png)
 
 - 执行`mvn clean`
 
-![清除项目](.\images\mvn clean.png)
+![清除项目](./images/mvn clean.png)
 
 删除target目录
 
-![清楚项目后](.\images\清楚项目后.png)
+![清楚项目后](./images/清楚项目后.png)
 
 
 
@@ -420,7 +420,7 @@ mvn dependency:tree
 
 **执行命令截图**
 
-![依赖树](.\images\mvn dependency_tree.png)
+![依赖树](./images/mvn dependency_tree.png)
 
 ##### 打印出已解决依赖的列表: `mvn dependency:resolve`
 
@@ -430,7 +430,7 @@ mvn dependency:resolve
 
 **执行命令截图**
 
-![打印出已解决依赖的列表](.\images\mvn dependency_resolve.png)
+![打印出已解决依赖的列表](./images/mvn dependency_resolve.png)
 
 **关于依赖冲突后面会单独写一篇文章来分享，敬请期待！！！，记得关注：小码匠和老码农**
 
@@ -442,7 +442,7 @@ mvn dependency:sources
 
 **执行命令截图**这个命令好理解，下载依赖包源码，就不多废话了
 
-![下载依赖包的源码](.\images\mvn dependency_sources.png)
+![下载依赖包的源码](./images/mvn dependency_sources.png)
 
 
 
@@ -453,21 +453,21 @@ Tomcat 这个名字的来历，Tomcat是一种野外的猫科动物，不依赖�
 
 1. 去[Maven Repository: Search/Browse/Explore (mvnrepository.com)](https://mvnrepository.com/)中找到tomcat
 
-   ![](.\images\tomcat插件1.png)
+   ![](./images/tomcat插件1.png)
 
 2. 复制代码
 
-   ![](.\images\tomcat插件2.png)
+   ![](./images/tomcat插件2.png)
 
 3. 添加到pom中
 
    写在build，plugins中，创建一个新的plugin
 
-   ![](.\images\tomcat插件3.png)
+   ![](./images/tomcat插件3.png)
    
 4. 在右侧maven处可以启动tomcat
 
-   ![](.\images\启动tomcat.png)
+   ![](./images/启动tomcat.png)
 
 
 
@@ -479,7 +479,7 @@ Tomcat 这个名字的来历，Tomcat是一种野外的猫科动物，不依赖�
 
 添加依赖，在pom文件的dependiencies标签中添加即可
 
-![](.\images\依赖.png)
+![](./images/依赖.png)
 
 ### 依赖传递
 
@@ -512,7 +512,7 @@ Tomcat 这个名字的来历，Tomcat是一种野外的猫科动物，不依赖�
 
 加一个option标签并设为true
 
-![](.\images\可选依赖.png)
+![](./images/可选依赖.png)
 
 
 
@@ -557,13 +557,13 @@ scope的取值：
 
 以下是几种常用的jar的常用的作用范围
 
-![](.\images\依赖范围.png)
+![](./images/依赖范围.png)
 
 
 
 配置后会在右侧显示
 
-![](.\images\scope.png)
+![](./images/scope.png)
 
 
 
@@ -581,7 +581,7 @@ scope的取值：
 - web02依赖junit，作用范围是runtime
 - 则此时junit在web01中范围是runtime
 
-![](.\images\依赖范围的传递性.png)
+![](./images/依赖范围的传递性.png)
 
 
 
@@ -612,7 +612,7 @@ maven对项目构建的生命周期划分为3个阶段
 - 执行compile，则会从validate按顺序执行到compile
 - 执行test，则会从validate按顺序执行到test
 
-![](.\images\default构建生命周期.png)
+![](./images/default构建生命周期.png)
 
 
 
