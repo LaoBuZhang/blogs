@@ -133,6 +133,16 @@ C:\Windows\System32\drivers\etc\hosts
 
 
 
+### 5 切换源主机网络
+
+切换源主机网络后配置会发生变化
+
+需要解决，否则无法上网
+
+[VmWare问题解决（网络变更后虚拟主机无法上网）](https://www.cnblogs.com/CoolSoul/p/4984673.html)
+
+
+
 ## 远程登陆和文件传输
 
 
