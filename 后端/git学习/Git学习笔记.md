@@ -546,15 +546,33 @@ git reset --hard commitID
 
 ## 12.Git问题总结
 
-1. error: failed to push some refs to "远程仓库地址"
+1.error: failed to push some refs to "远程仓库地址"
 
-   共有下面的错误原因：
+共有下面的错误原因：
 
-   1. 分支名不完整
-   2. 没有提交代码
-   3. 本地与远程产生冲突
+1. 分支名不完整
+2. 没有提交代码
+3. 本地与远程产生冲突
 
-   解决方法：
+解决方法：
 
-   [提交代码报错 error: failed to push some refs to](https://cloud.tencent.com/developer/article/1773434)
+[提交代码报错 error: failed to push some refs to](https://cloud.tencent.com/developer/article/1773434)
 
+
+
+2.this exceeds GitHub's file size limit of 100.00 MB
+
+上传文件超过100MB时会发生错误，在commit时不会出现问题，在push时会报错
+
+此时需要将commit中的该文件给去掉
+
+- 运行如下命令删除有关某个文件的push
+
+~~~cmd
+git filter-branch --force --index-filter "git rm --cached --ignore-unmatch 后端/MySQL/mysql-installer-community-8.0.31.0.msi"  --prune-empty --tag-name-filter cat -- --all
+# 其中 后端/MySQL/mysql-installer-community-8.0.31.0.msi为超出大小的文件，其中 后端 目录和.git目录同级
+~~~
+
+然后再push即可
+
+[解决this exceeds GitHub's file size limit of 100.00 MB](https://blog.csdn.net/lizy928/article/details/100047941)
