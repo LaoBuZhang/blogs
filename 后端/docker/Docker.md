@@ -240,7 +240,26 @@ cat /etc/docker/daemon.json
   docker inspect 容器名称
   ~~~
 
-  
+
+
+
+### 在容器内修改内容
+
+在容器内没有vi和vim，因此想要修改文件内容的话，可以使用以下命令
+
+但是不推荐这种方式，一般使用数据卷
+
+~~~bash
+sed -i 's#Welcome to nginx#传智教育欢迎您#g' index.html
+sed -i 's#<head>#<head><meta charset="utf-8">#g' index.html
+#每条命令最后那个index.html表示要修改的文件
+#第一行是将Welcome to nginx改为传智教育欢迎您
+#第二行是编码格式改为utf-8支持中文
+~~~
+
+
+
+
 
 ## docker容器的数据卷
 
@@ -267,12 +286,110 @@ cat /etc/docker/daemon.json
 
 
 
-### 配置数据卷
 
-启动容器时使用-v设置参数即可设置数据卷
+
+数据卷操作的基本语法如下：
+
+```sh
+docker volume [COMMAND]
+```
+
+docker volume命令是数据卷操作，根据命令后跟随的command来确定下一步的操作：
+
+- create 创建一个volume
+- inspect 显示一个或多个volume的信息
+- ls 列出所有的volume
+- prune 删除未使用的volume
+- rm 删除一个或多个指定的volume
+
+
+
+
+
+### 数据集操作命令
+
+数据卷操作的基本语法如下：
+
+```sh
+docker volume [COMMAND]
+```
+
+docker volume命令是数据卷操作，根据命令后跟随的command来确定下一步的操作：
+
+- create 创建一个volume
+- inspect 显示一个或多个volume的信息
+- ls 列出所有的volume
+- prune 删除未使用的volume
+- rm 删除一个或多个指定的volume
+
+
+
+### 创建和查看数据卷
+
+**需求**：创建一个数据卷，并查看数据卷在宿主机的目录位置
+
+① 创建数据卷
+
+```sh
+docker volume create html
+```
+
+
+
+② 查看所有数据
+
+```sh
+docker volume ls
+```
+
+结果：
+
+![image-20210731173746910](images/image-20210731173746910.png)
+
+
+
+
+
+③ 查看数据卷详细信息卷
+
+```sh
+docker volume inspect html
+```
+
+结果：
+
+![image-20210731173809877](images/image-20210731173809877.png)
+
+可以看到，我们创建的html这个数据卷关联的宿主机目录为`/var/lib/docker/volumes/html/_data`目录。
+
+
+
+
+
+
+
+**小结**：
+
+数据卷的作用：
+
+- 将容器与数据分离，解耦合，方便操作容器内数据，保证数据安全
+
+数据卷操作：
+
+- docker volume create：创建数据卷
+- docker volume ls：查看所有数据卷
+- docker volume inspect：查看数据卷详细信息，包括关联的宿主机目录位置
+- docker volume rm：删除指定数据卷
+- docker volume prune：删除所有未使用的数据卷
+
+
+
+### 数据卷挂载
+
+启动容器时使用-v设置参数即可挂载数据卷（若没有提前创建数据卷则会自动创建）
 
 ~~~bash
-docker run ... –v 宿主机目录(文件):容器内目录(文件) ...
+docker run ... –v 宿主机目录(文件夹):容器内目录(文件夹) ...
 ~~~
 
 注意事项：
@@ -297,6 +414,41 @@ docker run -it --name=c1 -v /root/data:/root/data_container centos:7 /bin/bash
 ~~~bash
 docker run -it --name=c1 -v /root/data1:/root/data_container1 -v /root/data2:/root/data_container2 centos:7 /bin/bash
 ~~~
+
+
+
+
+
+### 三种挂载
+
+挂载一般有三种
+
+- 数据卷挂载：宿主机目录 --> 数据卷 ---> 容器内目录
+- 目录挂载：宿主机目录 ---> 容器内目录
+- 文件挂载：宿主机文件 --> 容器内文件
+
+![image-20210731175155453](images/image-20210731175155453.png)
+
+[Docker的数据卷挂载、目录挂载、文件挂载](https://blog.csdn.net/weixin_43721000/article/details/123519834)
+
+**语法**：
+
+三者语法都是是类似的：
+
+- -v [数据卷名称]:[容器内目录]
+- -v [宿主机目录]:[容器内目录]
+- -v [宿主机文件]:[容器内文件]
+
+
+
+数据卷挂载与目录直接挂载的
+
+- 数据卷挂载耦合度低，由docker来管理目录，但是目录较深，不好找
+- 目录挂载耦合度高，需要我们自己管理目录，不过目录容易寻找查看
+
+目录和数据卷本质上都是宿主机内的目录，只不过数据卷是通过数据卷命令创建，由docker管理，目录由自己创建，自己进行管理
+
+
 
 
 
@@ -689,6 +841,8 @@ docker load -i 压缩文件名称
 
 #### dockerfile
 
+dockerfile也是一种制作镜像的方式
+
 
 
 ### dockerfile概念
@@ -788,7 +942,7 @@ vim springboot_dockerfile
 
 ~~~bash
 FROM java:8
-#定义父镜像
+#定义父镜像，父镜像相当于是一系列的dockerfile命令，java:8这个父镜像的作用是构建一个java8的环境
 MAINTAINER laobuzhang <18837409040@163com>
 #作者信息
 ADD springboot-hello-0.0.1-SNAPSHOT.jar app.jar
