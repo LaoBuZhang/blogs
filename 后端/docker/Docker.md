@@ -1013,14 +1013,12 @@ Docker Compose是一个编排多容器分布式部署的工具，提供命令集
 
 
 
-### 
-
 ## Docker Compose安装
 
 ### 1.安装Docker Compose
 
 ```shell
-# Compose目前已经完全支持Linux、Mac OS和Windows，在我们安装Compose之前，需要先安装Docker。下面我 们以编译好的二进制包方式安装在Linux系统中。 
+# Compose目前已经完全支持Linux、Mac OS和Windows，在我们安装Compose之前，需要先安装Docker。下面我们以编译好的二进制包方式安装在Linux系统中。 
 sudo curl -L "https://github.com/docker/compose/releases/download/1.28.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 # 设置文件可执行权限 
 chmod +x /usr/local/bin/docker-compose
@@ -1028,7 +1026,26 @@ chmod +x /usr/local/bin/docker-compose
 docker-compose -version
 ```
 
-### 2.卸载Docker Compose
+
+
+### 2.Docker Compose自动补全命令
+
+```sh
+# 补全命令，在bin目录下执行
+curl -L https://raw.githubusercontent.com/docker/compose/1.29.1/contrib/completion/bash/docker-compose > /etc/bash_completion.d/docker-compose
+```
+
+如果这里出现错误，需要修改自己的hosts文件：
+
+```sh
+echo "199.232.68.133 raw.githubusercontent.com" >> /etc/hosts
+```
+
+
+
+
+
+### 3.卸载Docker Compose
 
 ```shell
 # 二进制包方式安装的，删除二进制文件即可
@@ -1037,7 +1054,7 @@ rm /usr/local/bin/docker-compose
 
 
 
-### 3.使用docker compose编排nginx+springboot项目
+### 4.使用docker compose编排nginx+springboot项目
 
 1. 创建docker-compose目录
 
@@ -1103,6 +1120,196 @@ http://192.168.149.135/hello
 
 
 
+### 5.部署微服务集群
+
+**需求**：将之前学习的cloud-demo微服务集群利用DockerCompose部署
+
+
+
+**实现思路**：
+
+① 查看cloud-demo文件夹，里面已经编写好了docker-compose文件
+
+② 修改自己的cloud-demo项目，将数据库、nacos地址都命名为docker-compose中的服务名
+
+③ 使用maven打包工具，将项目中的每个微服务都打包为app.jar
+
+④ 将打包好的app.jar拷贝到cloud-demo中的每一个对应的子目录中
+
+⑤ 将cloud-demo上传至虚拟机，利用 docker-compose up -d 来部署
+
+
+
+#### 5.1.compose文件
+
+查看cloud-demo文件夹，里面已经编写好了docker-compose文件，而且每个微服务都准备了一个独立的目录：
+
+![image-20210731181341330](images/image-20210731181341330.png)
+
+内容如下：
+
+```yaml
+version: "3.2"
+
+services:
+  nacos:
+    image: nacos/nacos-server
+    environment:
+      MODE: standalone
+    ports:
+      - "8848:8848"
+  mysql:
+    image: mysql:5.7.25
+    environment:
+      MYSQL_ROOT_PASSWORD: 123
+    volumes:
+      - "$PWD/mysql/data:/var/lib/mysql"
+      - "$PWD/mysql/conf:/etc/mysql/conf.d/"
+  userservice:
+    build: ./user-service
+  orderservice:
+    build: ./order-service
+  gateway:
+    build: ./gateway
+    ports:
+      - "10010:10010"
+```
+
+可以看到，其中包含5个service服务：
+
+- `nacos`：作为注册中心和配置中心
+  - `image: nacos/nacos-server`： 基于nacos/nacos-server镜像构建
+  - `environment`：环境变量
+    - `MODE: standalone`：单点模式启动
+  - `ports`：端口映射，这里暴露了8848端口
+- `mysql`：数据库
+  - `image: mysql:5.7.25`：镜像版本是mysql:5.7.25
+  - `environment`：环境变量
+    - `MYSQL_ROOT_PASSWORD: 123`：设置数据库root账户的密码为123
+  - `volumes`：数据卷挂载，这里挂载了mysql的data、conf目录，其中有我提前准备好的数据
+- `userservice`、`orderservice`、`gateway`：都是基于Dockerfile临时构建的
+
+
+
+查看mysql目录，可以看到其中已经准备好了cloud_order、cloud_user表：
+
+![image-20210801095205034](images/image-20210801095205034.png)
+
+查看微服务目录，可以看到都包含Dockerfile文件：
+
+![image-20210801095320586](images/image-20210801095320586.png)
+
+内容如下：
+
+```dockerfile
+FROM java:8-alpine
+COPY ./app.jar /tmp/app.jar
+ENTRYPOINT java -jar /tmp/app.jar
+```
+
+
+
+
+
+#### 5.2.修改微服务配置
+
+因为微服务将来要部署为docker容器，而容器之间互联不是通过IP地址，而是通过容器名。这里我们将order-service、user-service、gateway服务的mysql、nacos地址都修改为基于容器名的访问。
+
+如下所示：
+
+```yaml
+spring:
+  datasource:
+    url: jdbc:mysql://mysql:3306/cloud_order?useSSL=false
+    username: root
+    password: 123
+    driver-class-name: com.mysql.jdbc.Driver
+  application:
+    name: orderservice
+  cloud:
+    nacos:
+      server-addr: nacos:8848 # nacos服务地址
+```
+
+
+
+#### 5.3.打包
+
+接下来需要将我们的每个微服务都打包。因为之前查看到Dockerfile中的jar包名称都是app.jar，因此我们的每个微服务都需要用这个名称。
+
+可以通过修改pom.xml中的打包名称来实现，每个微服务都需要修改：
+
+```xml
+<build>
+  <!-- 服务打包的最终名称 -->
+  <finalName>app</finalName>
+  <plugins>
+    <plugin>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-maven-plugin</artifactId>
+    </plugin>
+  </plugins>
+</build>
+```
+
+打包后：
+
+![image-20210801095951030](images/image-20210801095951030.png)
+
+
+
+#### 5.4.拷贝jar包到部署目录
+
+编译打包好的app.jar文件，需要放到Dockerfile的同级目录中。注意：每个微服务的app.jar放到与服务名称对应的目录，别搞错了。
+
+user-service：
+
+![image-20210801100201253](images/image-20210801100201253.png)
+
+order-service：
+
+![image-20210801100231495](images/image-20210801100231495.png)
+
+gateway：
+
+![image-20210801100308102](images/image-20210801100308102.png)
+
+
+
+#### 5.5.部署
+
+最后，我们需要将文件整个cloud-demo文件夹上传到虚拟机中，理由DockerCompose部署。
+
+上传到任意目录：
+
+![image-20210801100955653](images/image-20210801100955653.png)
+
+部署：
+
+进入cloud-demo目录，然后运行下面的命令：
+
+```sh
+docker-compose up -d
+```
+
+
+
+有事nacos会出现一些bug，nacos启动较慢，此时order-service和user-service会尝试在nacos进行注册，均会失败，此时需要重启这些服务
+
+~~~bash
+docker-compose restart gateway userservice orderservice
+~~~
+
+
+
+以下命令可以把所有容器都停止并删除
+
+~~~bash
+docker-compose down
+~~~
+
+
+
 
 
 ## Docker 私有仓库
@@ -1146,6 +1353,65 @@ docker push 私有仓库服务器IP:5000/centos:7
 #拉取镜像 
 docker pull 私有仓库服务器ip:5000/centos:7
 ```
+
+
+
+
+
+### 4.图形化私有仓库
+
+使用DockerCompose部署带有图象界面的DockerRegistry
+
+在/tmp下新建registry-ui目录
+
+在registry-ui目录下新建docker-compose文件
+
+~~~bash
+touch docker-compose.yml
+~~~
+
+内容如下
+
+```yaml
+version: '3.0'
+services:
+  registry:
+    image: registry
+    volumes:
+      - ./registry-data:/var/lib/registry
+  ui:
+    image: joxit/docker-registry-ui:static
+    ports:
+      - 8080:80
+    environment:
+      - REGISTRY_TITLE=传智教育私有仓库
+      - REGISTRY_URL=http://registry:5000
+    depends_on:
+      - registry
+```
+
+
+
+**配置Docker信任地址**
+
+我们的私服采用的是http协议，默认不被Docker信任，所以需要做一个配置：
+
+```sh
+# 打开要修改的文件
+vi /etc/docker/daemon.json
+# 添加内容：
+"insecure-registries":["http://192.168.234.100:8080"]
+# 重加载
+systemctl daemon-reload
+# 重启docker
+systemctl restart docker
+```
+
+
+
+
+
+使用192.168.234.100:8080即可访问图形化界面
 
 
 
