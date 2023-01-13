@@ -259,6 +259,46 @@ sed -i 's#<head>#<head><meta charset="utf-8">#g' index.html
 
 
 
+### docker安装vim
+
+vi编辑中文时会出现乱码，所以有时候需要安装vim
+
+在docker里边执行yum安装vim，但是由于以下原因，我们需要先配置一下yum
+
+CentOS 已经停止维护的问题。2020 年 12 月 8 号，CentOS 官方宣布了停止维护 CentOS Linux 的计划，并推出了 CentOS Stream 项目，CentOS Linux 8 作为 RHEL 8 的复刻版本，生命周期缩短，于 2021 年 12 月 31 日停止更新并停止维护（EOL），更多的信息可以查看 CentOS 官方公告。如果需要更新 CentOS，需要将镜像从 mirror.centos.org 更改为 vault.centos.org
+
+[Error: Failed to download metadata for repo ‘appstream‘: Cannot prepare internal mirrorlist_ReadThroughLife](https://blog.csdn.net/weixin_43252521/article/details/124409151?ops_request_misc=&request_id=&biz_id=102&utm_term=Failed to download metadata fo&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-4-124409151.142^v70^js_top,201^v4^add_ask&spm=1018.2226.3001.4187)
+
+1. **首先**，进入到 yum 的 repos 目录
+
+   ~~~bash
+   cd /etc/yum.repos.d/
+   ~~~
+
+2. **其次**，修改 centos 文件内容
+
+   ~~~bash
+   sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*
+   sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*
+   ~~~
+
+3. **然后**，生成缓存更新（第一次更新，速度稍微有点慢，耐心等待两分钟左右）
+
+   ~~~bash
+   yum makecache
+   ~~~
+
+4. **最后**，运行 yum update 并重新安装 vim
+
+   ~~~bash
+   yum update -y
+   yum -y install vim
+   ~~~
+
+然后vim就成功在docker内部安装了
+
+
+
 
 
 ## docker容器的数据卷
