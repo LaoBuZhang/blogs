@@ -1,38 +1,14 @@
----
-title: CSS3学习笔记
-date: 2022-03-14 23:20:35
-tags: 
-     - CSS3
-     - 前端
----
-
 # CSS学习笔记
 
 CSS3主要用来美化网页，给标签添加一些属性，也可以制作简单动画
 
-<!--more-->
 
-## 1、什么是CSS
 
-如何学习
+## 1.CSS简介
 
-​	1.CSS是什么
 
-​	2.CSS怎么用
 
-​	3.**CSS选择器（终点+难点）**
-
-​	4.美化网页（文字，阴影，超链接，列表，渐变……）
-
-​	5.盒子模型
-
-​	6.浮动
-
-​	7.定位
-
-​	8.网页动画（特效效果）
-
-### 1.1、什么是CSS
+### 1.1.什么是CSS
 
 Cascading Style Sheet 层叠级联样式表
 
@@ -73,7 +49,7 @@ h1{
 
 ![请添加图片描述](https://img-blog.csdnimg.cn/568764608d2c4c5c98595a058f6666b7.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAbGFvYnV6aGFuZw==,size_20,color_FFFFFF,t_70,g_se,x_16)
 
-### 1.2、发展史
+### 1.2.发展史
 
 CSS1.0
 
@@ -83,7 +59,7 @@ CSS2.1    浮动，定位
 
 CSS3.0    圆角，阴影，动画……浏览兼容性~
 
-### 1.3、快速入门
+### 1.3.快速入门
 
 1.在当CSS代码与HTML写在一起时，CSS代码写在  style 标签中，其中 style 标签写在 header 中
 
@@ -95,7 +71,7 @@ CSS3.0    圆角，阴影，动画……浏览兼容性~
 
 **此时称之为外部样式表**
 
-![请添加图片描述](https://img-blog.csdnimg.cn/98f7d48ed9a7468e8dfe2682d4ec959b.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAbGFvYnV6aGFuZw==,size_20,color_FFFFFF,t_70,g_se,x_16)
+![img](images/98f7d48ed9a7468e8dfe2682d4ec959b.png)
 
 
 
@@ -116,7 +92,7 @@ css的优势：
 
 
 
-### 1.4、css的3种导入方式
+### 1.4.css的3种导入方式
 
 ~~~html
 <!DOCTYPE html>
@@ -173,11 +149,11 @@ h1{
   </style>
   ~~~
 
-## 2、*选择器
+## 2.*选择器
 
 ​	作用：选择页面上的某一个或者某一类元素
 
-### 2.1、*基本选择器
+### 2.1.*基本选择器
 
 1. 标签选择器：选择一类标签      标签{}
 
@@ -208,6 +184,10 @@ h1{
    </body>
    </html>
    ~~~
+
+   效果
+
+   ![image-20230117142701704](images/image-20230117142701704.png)
 
 2. 类选择器 class：选择所有class属性一致的标签，可跨标签      .类名{}
 
@@ -240,6 +220,10 @@ h1{
    </body>
    </html>
    ~~~
+
+   效果
+
+   ![image-20230117142811137](images/image-20230117142811137.png)
 
 3. id 选择器：全局唯一      #id名称{}
 
@@ -277,6 +261,10 @@ h1{
    </body>
    </html>
    ~~~
+   
+   效果
+   
+   ![image-20230117142927235](images/image-20230117142927235.png)
 
 
 
@@ -284,7 +272,7 @@ h1{
 
 
 
-### 2.2、层次选择器
+### 2.2.层次选择器
 
 1. 后代选择器：在某个元素的后边       祖爷爷  爷爷  爸爸  你
 
@@ -313,7 +301,7 @@ h1{
    .active+p{
    	background: green;
    }
-   /* 选择类为active的标签的下边一个p标签 */
+   /* 选择类为active的标签的下边的那一个p标签 */
    ~~~
 
 4. 通用选择器
@@ -385,40 +373,7 @@ h1{
 </html>
 ~~~
 
-### 2.3、结构伪类选择器
-
-~~~css
-/* ul的第一个子元素 */
-ul li:first-child{
-	background: purple;
-}
-
-/* ul的最后一个子元素 */
-ul li:last-child{
-	background: rgb(0, 255, 136);
-}
-
-/* 选中p1 
-p:nth-child(1) 选中p的父级元素中的第n个元素（括号内为n的值），且只有选中的也是p元素才生效
-*/
-p:nth-child(1){
-	background: rgb(255, 30, 0);
-}
-p:nth-child(2){
-	background: rgb(255, 30, 0);
-}
-
-/* 选中p1 
-p:nth-of-type(2) 选中p的父级元素中的第n个p元素（括号内为n的值）
-*/
-p:nth-of-type(2){
-	background: yellow;
-}
-~~~
-
-
-
-
+### 2.3.结构伪类选择器
 
 ~~~html
 <!DOCTYPE html>
@@ -441,17 +396,17 @@ p:nth-of-type(2){
         /* 选中p1 
         p:nth-child(1) 选中p的父级元素的第n个元素（括号内为n的值），且只有选中的也是p元素才生效
         */
-        p:nth-child(1){
+        p:nth-child(4){/*p3变红，body标签中的第4个元素*/
             background: rgb(255, 30, 0);
         }
-        p:nth-child(2){
+        p:nth-child(2){/*p1变红，body标签中的第2个元素*/
             background: rgb(255, 30, 0);
         }
 
         /* 选中p1 
         p:nth-of-type(2) 选中p的父级元素的第n个p元素（括号内为n的值）
         */
-        p:nth-of-type(2){
+        p:nth-of-type(2){/*p2变黄，body标签中的第2个p元素*/
             background: yellow;
         }
         
@@ -472,64 +427,16 @@ p:nth-of-type(2){
 </html>
 ~~~
 
-**以下代码结果如图：**
+效果
 
-~~~html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-
-    <style>
-        /* ul的第一个子元素 */
-        ul li:first-child{
-            background: purple;
-        }
-
-        /* ul的最后一个子元素 */
-        ul li:last-child{
-            background: rgb(0, 255, 136);
-        }
-
-        /* 选中p1 
-        p:nth-child(1) 选中p的父级元素中的第n个元素（括号内为n的值），且只有选中的也是p元素才生效
-        */
-        p:nth-child(1){ /* 不生效 */
-            background: rgb(255, 30, 0);
-        }
-        p:nth-child(2){ /* 生效 */
-            background: rgb(255, 30, 0);
-        }
-
-        /* 选中p1 
-        p:nth-of-type(2) 选中p的父级元素中的第n个p元素（括号内为n的值）
-        */
-        p:nth-of-type(2){
-            background: yellow;
-        }
-        
-    </style>
-</head>
-<body>
-    <h1>h1</h1>
-    <p>p1</p>
-    <p>p2</p>
-    <p>p3</p>
-
-    <ul>
-        <li>li1</li>
-        <li>li2</li>
-        <li>li3</li>
-    </ul>
-</body>
-</html>
-~~~
-
-![请添加图片描述](https://img-blog.csdnimg.cn/8824661c9bbc4f4f901a23ba1f7d96e2.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAbGFvYnV6aGFuZw==,size_20,color_FFFFFF,t_70,g_se,x_16)
+![image-20230117150051705](images/image-20230117150051705.png)
 
 
-### 2.4、*属性选择器（常用）
+
+
+
+
+### 2.4.*属性选择器（常用）
 
 id+class  结合
 
@@ -609,14 +516,16 @@ id+class  结合
 </html>
 ~~~
 
-**效果：**
+效果
 
-![请添加图片描述](https://img-blog.csdnimg.cn/8f4296c13c4042ed9b9624b9798da13f.png)
+![image-20230117150331500](images/image-20230117150331500.png)
 
 
-## 3、美化网页元素
 
-### 3.1、为什么要美化网页
+
+## 3.美化网页元素
+
+### 3.1.为什么要美化网页
 
 1. 有效传递信息
 2. 页面漂亮，吸引用户
@@ -649,9 +558,11 @@ span标签：重点要突出的字使用span标签套出来
 </html>
 ~~~
 
+![image-20230117150522597](images/image-20230117150522597.png)
 
 
-### 3.2、字体样式
+
+### 3.2.字体样式
 
 **主要使用font属性**
 
@@ -719,9 +630,15 @@ span标签：重点要突出的字使用span标签套出来
 </html>
 ~~~
 
+效果
+
+![image-20230117150655518](images/image-20230117150655518.png)
 
 
-### 3.3、文本样式
+
+
+
+### 3.3.文本样式
 
 1. 颜色    color  rgb rgba
 2. **文本对齐方式    text-align=center**
@@ -820,7 +737,7 @@ span标签：重点要突出的字使用span标签套出来
 
 
 
-### 3.4、阴影
+### 3.4.阴影
 
 ~~~css
 /* 阴影：阴影颜色 水平偏移 垂直偏移 阴影半径 */
@@ -831,7 +748,7 @@ span标签：重点要突出的字使用span标签套出来
 
 
 
-### 3.5、超链接伪类
+### 3.5.超链接伪类
 
 鼠标与链接的交互
 
@@ -895,7 +812,7 @@ span标签：重点要突出的字使用span标签套出来
 
 
 
-### 3.6、列表
+### 3.6.列表
 
 div标签：没有作用的空标签，可以加上id以实现对一整段标签的操作
 
@@ -973,7 +890,7 @@ a:hover{
 
 
 
-### 3.7、背景
+### 3.7.背景
 
 - 背景颜色
 - 背景图片
@@ -999,7 +916,7 @@ background-position: 180px 4px;
 
 
 
-### 3.8、渐变
+### 3.8.渐变
 
 [渐变背景网站](https://www.grabient.com/ )
 
@@ -1012,17 +929,82 @@ body{
 
 
 
-### 3.9、设置位置
+### 3.9.设置字的位置
 
-[先粘一个链接](https://blog.csdn.net/weixin_30978239/article/details/117784262?ops_request_misc=%7B%22request%5Fid%22%3A%22164664819016780264073309%22%2C%22scm%22%3A%2220140713.130102334.pc%5Fall.%22%7D&request_id=164664819016780264073309&biz_id=0&spm=1018.2226.3001.4187)
+三种方式
+
+#### 1.text-align属性
+
+text-align属性指定元素文本的水平对齐方式。
+
+语法：
+
+~~~css
+text-align : left | right | center | justify
+~~~
+
+text-align参数值与说明：
+
+~~~
+left : 左对齐
+
+right : 右对齐
+
+center : 居中
+
+justify : 两端对齐(不推荐使用，通常大部分浏览器不使用)
+~~~
+
+示例：
+
+~~~css
+p{
+    text-align: left; /* 位置居左 */
+    text-align: center; /* 位置居中 */
+    text-align: right; /* 位置居右 */
+}
+~~~
 
 
 
-## 4、盒子模型
+#### 2.position属性
 
-### 4.1、什么是盒子模型
+position属性规定元素的定位类型。当设置的值为absolute、relative、fixed时，可以使用top、right、bottom、left属性来进行定位。
 
-![请添加图片描述](https://img-blog.csdnimg.cn/09fb0183d8f8454894faca216a4c61b4.png)
+~~~css
+p{
+    position: fixed; /* 相对于浏览器窗口定位 */
+    left: 100px; /* 距离浏览器左边100px */
+    top: 200px; /* 距离浏览器上边200px */
+}
+~~~
+
+
+
+#### 3.padding、margin属性
+
+margin属性设置一个元素所有外边距的宽度，或者设置各边上外边距的宽度。
+
+padding属性设置元素所有内边距的宽度，或者分别设置各边上内边距的宽度。
+
+行内非替换元素上设置的内边距不会影响行高计算；因此，如果一个元素既有内边距又有背景，从视觉上看可能会延伸到其他行，有可能还会与其他内容重叠。元素的背景会延伸穿过内边距。不允许指定负边距值。
+
+示例：
+
+~~~css
+p{
+    margin: 100px 200px; /* 文字距离上下有100px外边距 距离左右有200外边距 */
+    padding: 100px 200px; /* 文字距离上下有100px内边距 距离左右有200内边距 */
+}
+~~~
+
+
+
+## 4.盒子模型
+
+### 4.1.什么是盒子模型
+
+![img](images/09fb0183d8f8454894faca216a4c61b4.png)
 
 
 - margin：外边距
@@ -1031,7 +1013,7 @@ body{
 
 
 
-### 4.2、边框
+### 4.2.边框
 
 1. 边框的粗细
 2. 边框的样式
@@ -1107,7 +1089,7 @@ body{
 
 
 
-### 4.3、内外边距
+### 4.3.内外边距
 
 **margin标签**：外边距
 
@@ -1131,9 +1113,13 @@ body{
 }
 ~~~
 
+效果
+
+![image-20230117152813945](images/image-20230117152813945.png)
 
 
-### 4.4、圆角边框
+
+### 4.4.圆角边框
 
 **border-radius属性**，四个值对应四个角
 
@@ -1159,9 +1145,13 @@ div{
 }
 ~~~
 
+效果
+
+![image-20230117153102348](images/image-20230117153102348.png)
 
 
-### 4.5、阴影
+
+### 4.5.阴影
 
 **box-shadow属性**，
 
@@ -1170,11 +1160,15 @@ div{
 box-shadow: 10px 10px 10px yellow;
 ~~~
 
+效果
+
+![image-20230117153237577](images/image-20230117153237577.png)
 
 
-## 5、浮动
 
-### 5.1、标准文档流
+## 5.浮动
+
+### 5.1.标准文档流
 
 文档流(Normal flow)也称为常规流，普通流。
 
@@ -1204,7 +1198,7 @@ span  a  img  strong……
 
 
 
-### 5.2、display
+### 5.2.display
 
 ~~~css
 /*
@@ -1233,7 +1227,7 @@ span{
 
 这也是一种行内元素排列方式，但是很多情况下都是用float
 
-### 5.3、float
+### 5.3.float
 
 左右浮动float属性，可以设置便签的位置
 
@@ -1248,7 +1242,7 @@ span{
 
 
 
-### 5.4、*父级边框塌陷的问题
+### 5.4.*父级边框塌陷的问题
 
 如图，将几张在div内的img设为float后，div的边框就变成了上边的一小条，img的高度无法再撑开div标签
 
@@ -1268,6 +1262,8 @@ span{
 
 
 **解决方案：**
+
+四种方案
 
 **1.增加父级元素高度**
 
@@ -1366,16 +1362,16 @@ span{
 
 
 
-### 5.5、对比display和float
+### 5.5.对比display和float
 
 - display    方向不可控制
 - float         需要解决边框塌陷问题
 
 
 
-## 6、定位
+## 6.定位
 
-### 6.1、相对定位
+### 6.1.相对定位
 
 **position: relative;**          使得该类可以开始移动位置
 
@@ -1406,7 +1402,7 @@ span{
 
 鼠标放上变蓝
 
-![请添加图片描述](https://img-blog.csdnimg.cn/0b57358edd0c41e98ce755c404a7283b.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAbGFvYnV6aGFuZw==,size_13,color_FFFFFF,t_70,g_se,x_16)
+![img](images/0b57358edd0c41e98ce755c404a7283b.png)
 
 
 **正解：**
@@ -1574,7 +1570,7 @@ span{
 
 [参考于](https://blog.csdn.net/dgedge0769/article/details/101988117?ops_request_misc=&request_id=&biz_id=102&spm=1018.2226.3001.4187)
 
-### 6.2、绝对定位
+### 6.2.绝对定位
 
 基于xxx定位
 
@@ -1600,7 +1596,7 @@ span{
 
 
 
-### 6.3、*固定定位fixed
+### 6.3.*固定定位fixed
 
 固定不动，可调整相对于浏览器的位置，即使拖动滚动条，可以用来做导航目录栏，头部栏
 
@@ -1617,7 +1613,7 @@ span{
 
 
 
-### 6.4、z-index
+### 6.4.z-index
 
 **z-index:**默认是0，最高无限
 
@@ -1649,7 +1645,8 @@ z-index的值越大，该标签的层级越靠上，会覆盖z-index比它小的
 
 
 
-## 7、动画
+## 7.动画
 
 网上白嫖代码
 源码之家等
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        .demo a{
+            float: left;
+            display: block;
+            height: 50px;
+            width: 50px;
+            border-radius: 10px;
+            background: blue;
+            text-align: center;
+            color: red;
+            text-decoration: none;
+            margin-right: 5px;
+            font: bold 20px/50px Arial;
+        }
+
+        /* 选择存在某属性的元素  
+        a[]{}
+            [] 中可填：1.属性
+                       2.属性=属性值（可为正则表达式）
+                       3.属性*=属性值
+                       4.属性^=属性值
+        			   5.属性$=属性值
+        		只填属性： 包含该属性即可
+                = 绝对等于
+                *= 包含该属性即可
+                ^= 以该属性值开头
+                $= 以该属性结尾
+        */
+        
+        /* 选中id属性为last的 */
+        a[id=last]{
+            background: yellow;
+        }
+        /* 选中class中包含links的元素 */
+        a[class*="links"]{
+            background: green;
+        }
+
+        /* 选中href中以http开头的元素 */
+        a[href^=http]{
+            background: pink;
+        }
+
+        /* 选中href中以jpg结尾的元素 */
+        a[href$=jpg]{
+            background: rgb(0, 225, 255);
+        }
+        
+    </style>
+</head>
+<body>
+    
+
+    <p class="demo">
+        <a href="http://www.baidu.com" class="links item first" id="first">1</a>
+        <a href="" class="links item active" target="_blank" title="test">2</a>
+        <a href="../1.我的第一个css程序/index.HTML" class="links item">3</a>
+        <a href="../1.我的第一个css程序/index.png" class="links item">4</a>
+        <a href="../1.我的第一个css程序/index.jpg" class="links item">5</a>
+        <a href="abc" class="links item">6</a>
+        <a href="/a.pdf" class="links item">7</a>
+        <a href="/abc.pdf" class="links item">8</a>
+        <a href="abc.doc" class="links item">9</a>
+        <a href="abcd.doc" class="item last" id="last">10</a>
+    </p>
+</body>
+</html>

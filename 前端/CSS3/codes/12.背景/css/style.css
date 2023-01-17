@@ -1,0 +1,43 @@
+#nav{
+    width: 250px;
+    background: rgb(231, 221, 221);
+}
+
+
+h2{
+    font-size: 20px;
+    font-weight: bold;
+    text-indent: 3em;
+    line-height: 35px;
+    background: red url("../images/箭头2.png") 215px 2px no-repeat;
+}
+
+/* ul li
+list-style:
+    none 去掉原点
+    citcle 空心圆
+    decimal 数字
+    square 正方形
+*/
+ul li{
+    height: 30px;
+    list-style: none;
+    text-indent: 1em;
+    background-image: url("../images/箭头3.png");
+    background-repeat: no-repeat;
+    background-position: 180px 4px;
+}
+ul{
+    background: rgb(231, 221, 221);
+}
+
+
+a{
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+}
+a:hover{
+    color: orange;
+    text-decoration: underline;
+}

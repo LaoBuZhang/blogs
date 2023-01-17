@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格学习</title>
+</head>
+<body>
+    <!-- 表格table
+    行 tr
+    列 td
+    border 表格边框宽度
+    -->
+
+    <table border="1px">
+        <tr>
+            <!-- colspan 跨列 -->
+            <td colspan="2">1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <!-- rowspan 跨行 -->
+            <td rowspan="3">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+
+    <table border="1px">
+        <tr>
+            <!-- style="text-align:center" 使文字居中 -->
+            <td colspan="3" style="text-align:center">英语四级成绩</td>
+        </tr>
+        <tr>
+            <td rowspan="2">老部长</td>
+            <td>阅读</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>听力</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td rowspan="2">寒冰战士</td>
+            <td>阅读</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>听力</td>
+            <td>60</td>
+        </tr>
+    </table>
+</body>
+
+</html>

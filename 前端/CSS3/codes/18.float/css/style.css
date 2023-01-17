@@ -1,0 +1,44 @@
+div{
+    margin: 10px;
+    padding: 5px;
+}
+#father{
+    border: 1px #000 solid;
+    overflow: scroll;
+}
+#father::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.layer1{
+    border: 1px #F00 dashed;
+    float: left;
+}
+.layer2{
+    border: 1px #00F dashed;;
+    float: left;
+}
+.layer3{
+    border: 1px #060 dashed;
+    float: right;
+}
+
+/* 
+clear: right;  右侧不许有浮动元素
+clear: left;   左侧不许有浮动元素
+clear: both;   两侧不许有浮动元素
+*/
+.layer4{
+    border: 1px #666 dashed;
+    font-size: 12px;
+    line-height: 23px;
+    float: right;
+    clear: both;
+}
+
+.clear{
+    clear: both;
+    margin: 0;
+    padding: 0;
+}

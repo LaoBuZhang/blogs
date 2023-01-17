@@ -1,19 +1,9 @@
----
-title: HTML5学习笔记
-date: 2022-03-14 23:03:30
-tags: 
-    - HTML5
-    - 前端
----
-
 ## 前言
 
 HTML5内容不多，相对来说还是比较简单学习的
 学习笔记全部蕴含在代码中，使用编辑器为VSCode
 
 
-
-<!--more-->
 
 ## 基本操作
 
@@ -87,6 +77,10 @@ h1+Tab  快速生成h1标签
 </html>
 ```
 
+效果：
+
+![image-20230117125443542](images/image-20230117125443542.png)
+
 ## 链接标签
 
 ```html
@@ -102,8 +96,6 @@ h1+Tab  快速生成h1标签
 <!-- 
     超链接标签
     herf:必填，表示要跳转的页面标签
-    	所填写的可谓本地绝对目录和本地相对目录，也可为网页链接
-    	../ 返回上一级目录（从该HTML文件所在位置开始）
     target:表示窗口在哪里打开
         _blank   在新标签打开
         _self    在自己的网页中打开（默认）
@@ -122,27 +114,7 @@ h1+Tab  快速生成h1标签
     <a href="https://www.baidu.com">
         <img src="../resource/image/1.jpg" alt="laobuzhang6" title="老部长66">
     </a>
-    <a href="https://www.baidu.com">
-        <img src="../resource/image/1.jpg" alt="laobuzhang6" title="老部长66">
-    </a>
-    <a href="https://www.baidu.com">
-        <img src="../resource/image/1.jpg" alt="laobuzhang6" title="老部长66">
-    </a>
-    <a href="https://www.baidu.com">
-        <img src="../resource/image/1.jpg" alt="laobuzhang6" title="老部长66">
-    </a>
-    <a href="https://www.baidu.com">
-        <img src="../resource/image/1.jpg" alt="laobuzhang6" title="老部长66">
-    </a>
-    <a href="https://www.baidu.com">
-        <img src="../resource/image/1.jpg" alt="laobuzhang6" title="老部长66">
-    </a>
-    <a href="https://www.baidu.com">
-        <img src="../resource/image/1.jpg" alt="laobuzhang6" title="老部长66">
-    </a>
-    <a href="https://www.baidu.com">
-        <img src="../resource/image/1.jpg" alt="laobuzhang6" title="老部长66">
-    </a>
+
 
 
     <!-- 锚链接
@@ -154,7 +126,7 @@ h1+Tab  快速生成h1标签
     <a href="#top">回到顶部</a>
     <a name="down"></a>
 
-    <a href="图像标签.HTML#top">回到图像标签.HTML顶部</a>
+    <a href="3.图像标签.HTML#top">回到图像标签顶部</a>
 
 
 
@@ -168,7 +140,13 @@ h1+Tab  快速生成h1标签
 </html>
 ```
 
+效果
+
+![image-20230117132344748](images/image-20230117132344748.png)
+
 ## 图像标签
+
+图片无法加载时用alt来替代展示
 
 ```html
 <!DOCTYPE html>
@@ -191,10 +169,14 @@ h1+Tab  快速生成h1标签
     <img src="../resource/image/2.jpg" alt="laobuzhang666" title="老部长666">
     <img src="../resource/image/1.jpg" alt="laobuzhang6" title="老部长66">
     
-    <a href="链接标签.HTML#down">回到</a>
+    <a href="2.链接标签.HTML#down">回到</a>
 </body>
 </html>
 ```
+
+效果
+
+![image-20230117132910869](images/image-20230117132910869.png)
 
 ## 页面结构
 
@@ -214,6 +196,12 @@ h1+Tab  快速生成h1标签
         <h2>网页主体</h2>
     </section>
 
+    <article>这是一篇小短文</article>
+
+    <aside>侧边栏</aside>
+
+    <nav>123</nav>
+
     <footer>
         <h2>网页脚部</h2>
     </footer>
@@ -223,6 +211,12 @@ h1+Tab  快速生成h1标签
 ```
 
 ![请添加图片描述](https://img-blog.csdnimg.cn/8e1577f6cf494dd0ab7a0563ef78c9f6.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAT2xkX1NlY3JldGFyeQ==,size_20,color_FFFFFF,t_70,g_se,x_16)
+
+效果
+
+![image-20230117133419588](images/image-20230117133419588.png)
+
+
 
 ## 列表标签
 
@@ -275,6 +269,12 @@ h1+Tab  快速生成h1标签
 </body>
 </html>
 ```
+
+效果
+
+![image-20230117133616631](images/image-20230117133616631.png)
+
+
 
 ## 表格标签
 
@@ -338,6 +338,12 @@ h1+Tab  快速生成h1标签
 </html>
 ```
 
+效果
+
+![image-20230117133809047](images/image-20230117133809047.png)
+
+
+
 ## 媒体元素
 
 ```html
@@ -360,6 +366,14 @@ h1+Tab  快速生成h1标签
 </body>
 </html>
 ```
+
+效果
+
+![image-20230117134254408](images/image-20230117134254408.png)
+
+视频没有画面是因为格式和编码方式的问题，浏览器可能不支持这个格式
+
+
 
 ## 内联框架
 
@@ -387,6 +401,12 @@ h1+Tab  快速生成h1标签
 </body>
 </html>
 ```
+
+效果
+
+![image-20230117135605814](images/image-20230117135605814.png)
+
+
 
 ## *表单
 
@@ -569,7 +589,14 @@ h1+Tab  快速生成h1标签
 </html>
 ```
 
+效果
+
+![image-20230117135712719](images/image-20230117135712719.png)
+
+
+
 ## 总结
 
-![请添加图片描述](https://img-blog.csdnimg.cn/58ae332778524cdbb845210788420455.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAT2xkX1NlY3JldGFyeQ==,size_12,color_FFFFFF,t_70,g_se,x_16)
-![请添加图片描述](https://img-blog.csdnimg.cn/15406354b7044bb09e8d075ba4fcf555.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAT2xkX1NlY3JldGFyeQ==,size_15,color_FFFFFF,t_70,g_se,x_16)
+![image-20230117140913593](images/image-20230117140913593.png)
+
+<img src="images/image-20230117140946412.png" alt="image-20230117140946412" style="zoom:80%;" />

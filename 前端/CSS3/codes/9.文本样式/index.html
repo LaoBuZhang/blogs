@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <!-- 
+        颜色：
+            单词
+            rgb(a,b,c)
+            rgba(a,b,c,d)  d:0~1 透明度
+            #RGB
+            
+        text-align ：排版，居中
+        text-indent : 首行缩进
+        height ： 块高
+        line-height ： 行高
+     -->
+    <style>
+        h1{
+            color: #0180ff;
+            color: rgb(255, 0, 255);
+            color: rgba(0, 255, 255, 0.9);
+            text-align: center;
+        }
+        .p1{
+            text-indent: 2em;
+        }
+        .p3{
+            background: red;
+            height: 200px;
+            /* 行高等于块高度时即可实现上下居中 */
+            line-height: 200px;
+        }
+
+        /* 三种装饰 */
+        .l1{
+            text-decoration: underline;
+        }
+        .l2{
+            text-decoration: line-through;
+        }
+        .l3{
+            text-decoration: overline;
+        }
+
+        /* 图片和文字水平对齐 */
+        img,span{
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+    <p class="l1">123</p>
+    <p class="l2">456</p>
+    <p class="l3">789</p>
+    <h1>故事介绍</h1>
+    <p class="p1">美国，1899年。当警察开始打击残余亡命之徒的帮派时，蛮荒的西部时代迎来了最后的黄昏。</p>
+    <p class="p2">不愿投降或是屈服的人，只有死路一条。</p>
+    <p class="p3">亚瑟·摩根和范德林德帮众在黑水镇的一次抢劫行动遭遇了始料不及的意外，他们不得不逃离这个西部小镇。</p>
+    <p class="p4">联邦侦探和全国顶尖的赏金猎人在他们的身后穷追不舍，亚瑟一行人必须在广袤蛮荒的美国腹地上四处劫掠、挣扎求生。</p>
+    <p>而帮派内部的矛盾分化日渐加深，摆在亚瑟面前的将是他无法避免的抉择：</p>
+    <p>究竟是选择自己的理想，还是选择效忠于抚养了自己的帮派。</p>
+
+    <p>
+        Do you fear the force of the wind,
+        The slash of the rain?
+        Go face them and fight them,
+        Be savage again.
+        Go hungry and cold like the wolf,
+        Go wade like the crane:
+        The palms of your hands will thicken,
+        The skin of your cheek will tan,
+        You'll grow ragged and weary and swarthy,
+        But you'll walk like a man!
+    </p>
+
+
+    <p>
+        <img src="../9.文本样式/image/a.png" alt="">
+        <span>asdasasdasd</span>
+    </p>
+</body>
+</html>

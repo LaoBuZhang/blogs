@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <!-- 正确的顺序：a:link、a:visited、a:hover、a:active -->
+    <style>
+        /* 默认颜色 */
+        a{
+            text-decoration: none;
+        }
+
+        /* 未访问的链接 */
+        a:link{
+            color: blue;
+        }
+
+        /* 已访问的链接 */
+        a:visited{
+            color: pink;
+        }
+        /* 是否被访问储存在缓存中。。。 */
+
+        /* 鼠标悬浮的状态 */
+        a:hover{
+            color: yellow;
+        }
+
+        /* 鼠标按住的状态 */
+        a:active{
+            color: red;
+        }
+
+        /* 阴影：阴影颜色 水平偏移 垂直偏移 阴影半径 */
+        #price{
+            text-shadow: rgb(0, 225, 255) 5px 0px 2px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">
+        <img src="images/a.png" alt="">
+    </a>
+    <p>
+        <a href="#">码出高效：Java开发手册</a>
+    </p>
+    <p>
+        <a href="">作者：孤尽老师</a>
+    </p>
+    <p id="price">
+        ￥99
+    </p>
+</body>
+</html>

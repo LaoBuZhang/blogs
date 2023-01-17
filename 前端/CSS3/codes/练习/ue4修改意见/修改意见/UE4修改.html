@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UE4</title>
+    <style>
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.nav-header{
+    height: 90px;
+    width: 100%;
+    background: rgba(0, 0, 0, .6);
+}
+.head-contain{
+    width: 1180px;
+    height: 90px;
+    margin: 0 auto;
+    text-align: center;
+}
+.top-logo, .top-nav, .top-nav li, .top-right{
+    height: 90px;
+    display: inline-block;
+    vertical-align: top;
+}
+.top-logo{
+    float: left;
+}
+.top-nav{
+    margin: 0 48px;
+}
+.top-nav li{
+    line-height: 90px;
+    width: 90px;
+}
+.top-nav li a{
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+.top-nav li a:hover{
+    color: blue;
+}
+.top-right a{
+    display: inline-block;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 25px;
+    border-radius: 35px;
+}
+.top-right a:first-of-type{
+    width: 93px;
+    height: 38px;
+    line-height: 38px;
+    color: #fad65c;
+    border: 1px #fad65c solid;
+}
+.top-right a:first-of-type:hover{
+    color: #986b0d;
+    background: #fad65c;
+}
+.top-right a:last-of-type{
+    width: 140px;
+    height: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    background: #fad65c;
+    color: #986b0d;
+}
+.top-right a:last-of-type:hover
+{
+    background: #fddc6c;
+}
+
+
+
+#div0{
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+}
+/* #div0{
+    text-align: center;
+} */
+
+.div1{
+    font-family: 楷体;
+    text-align: center;
+    font-size: 60px;
+}
+h2{
+    font-size: 35px;
+}
+
+h3{
+    font-size: 30px;
+}
+
+p{
+    font-size: 20px;
+}
+aside{
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+
+    border-left: 2px solid rgb(185, 179, 179);
+}
+
+
+#list{
+    margin-top: 0;
+    text-indent: 3.5em;
+
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: orange;
+}
+
+
+    </style>
+
+
+
+</head>
+<body>
+
+
+    <div class="wrap">
+        <!-- 头部 -->
+        <header class="nav-header">
+            <div class="head-contain">
+                <a href="" class="top-logo"><img src="https://img-blog.csdnimg.cn/66c792d2b83f4e0095ea40c35110a5af.png" width="145" height="90"></a>
+                <nav class="top-nav">
+                    
+                    <ul>
+                        <li><a href="">入门教程</a></li>
+                        <li><a href="">官方文档</a></li>
+                        <li><a href="">c++教程</a></li>
+                    </ul>
+                </nav>
+                <div class="top-right">
+                    <a href="">登录</a>
+                    <a href="">开通超级会员</a>
+                </div>
+            </div>
+        </header>
+    </div>
+
+
+    <div id="div0">
+        <h1 class="div1">
+            UE4修改意见
+        </h1>
+
+
+        <hr>
+        <div>
+            <h2>
+                1.人物直接掉下去
+                <a name="1.人物直接掉下去"></a>
+            </h2>
+            <p>
+                没有给场景设置碰撞
+            </p>
+            <h3>
+                修改方法：
+            </h3>
+            <p>
+                添加碰撞
+            </p>
+            <h3>
+                操作：
+            </h3>
+    
+            <p>
+                1.双击房子对应的静态网格体进入编辑页面
+            </p>
+            <p>
+                <img src="https://img-blog.csdnimg.cn/c06a4b09b6b9424bb9c182dcb971ab77.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAbGFvYnV6aGFuZw==,size_20,color_FFFFFF,t_70,g_se,x_16" 
+                alt="1.1" width="800" height="400">
+            </p>
+            
+            <p>
+                2.右侧详情处找到碰撞，修改碰撞复杂度和碰撞预设，然后就完成了碰撞的添加
+            </p>
+            <p>
+                <img src="https://img-blog.csdnimg.cn/2e028eea0e004b6c821698d526c6cc72.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAbGFvYnV6aGFuZw==,size_20,color_FFFFFF,t_70,g_se,x_16" 
+                alt="1.1" width="800" height="400">
+            </p>
+
+            <h3>
+                建议：
+            </h3>
+            <p>
+                一般添加碰撞都是这样做的
+            </p>
+        </div>
+
+
+
+        <hr>
+        <div>
+            <h2>
+                2.场景大小没有规划好
+                <a name="2.场景大小没有规划好"></a>
+            </h2>
+            <p>
+                场景做的过于大，然后调整人物大小来适应场景。
+            </p>
+            <h3>
+                修改方法：
+            </h3>
+            <p>
+                删除原本人物，新加入一个人物，然后缩小整个场景构成的静态网格体，让场景来适应人物。
+            </p>
+            <h3>
+                操作：
+            </h3>
+    
+            <p>
+                1.选中原本人物，按backspace删除
+            </p>
+            <p>
+                <img src="https://img-blog.csdnimg.cn/33b222599d5d4f2e8c3cdf580a04ab4a.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAbGFvYnV6aGFuZw==,size_20,color_FFFFFF,t_70,g_se,x_16" 
+                alt="1.1" width="800" height="400">
+            </p>
+            
+            <p>
+                2.加入新的人物，并给予控制权
+            </p>
+            <p>
+                <img src="https://img-blog.csdnimg.cn/afe065ac9aca48668d5294eef5deeb6d.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAbGFvYnV6aGFuZw==,size_20,color_FFFFFF,t_70,g_se,x_16" 
+                alt="1.1" width="800" height="400">
+            </p>
+    
+            <p>
+                3.选中整个房子，缩放至符合新人物大小
+            </p>
+            <p>
+                <img src="https://img-blog.csdnimg.cn/a70f4dc460d9481d9892a713c389e78d.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAbGFvYnV6aGFuZw==,size_20,color_FFFFFF,t_70,g_se,x_16" 
+                alt="1.1" width="800" height="400">
+            </p>
+    
+            <p>
+                4.重新调整其他物件的大小和位置，完成第一步
+            </p>
+            <p>
+                <img src="https://img-blog.csdnimg.cn/ea8776f1119e46a5944e2caff901ce11.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAbGFvYnV6aGFuZw==,size_20,color_FFFFFF,t_70,g_se,x_16" 
+                alt="1.1" width="800" height="400">
+            </p>
+
+            <h3>
+                建议：
+            </h3>
+            <p>
+                下次制作时，先加入人物，然后根据人物来设计场景大小。
+                <br>
+                因为人物的动画是和大小配套的，如果改变人物大小，可能导致动画看起来怪怪的。
+            </p>
+        </div>
+
+
+        
+        <hr>
+        <div>
+            <h2>
+                3.自动门开合方式不对
+                <a name="3.自动门开合方式不对"></a>
+            </h2>
+            <p>
+                时间轴那里的设置应该根据实际数值，而不是单纯的0和80
+            </p>
+            <h3>
+                修改方法：
+            </h3>
+            <p>
+                先确定门的旋转角度，然后再修改时间轴
+            </p>
+            <h3>
+                操作：
+            </h3>
+    
+            <p>
+                1.选中门，看右下角的当前旋转的z轴角度，此即为初始角度-90
+            </p>
+            <p>
+                <img src="https://img-blog.csdnimg.cn/7630ec9ca37c408a91ec3e918d485837.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAbGFvYnV6aGFuZw==,size_20,color_FFFFFF,t_70,g_se,x_16" 
+                alt="1.1" width="800" height="400">
+            </p>
+            
+            <p>
+                2.手动将门旋转至想要的角度，然后再次看右下角的旋转的z轴角度，此即为结束角度0 （记得看过后再把门转回-90）
+            </p>
+            <p>
+                <img src="https://img-blog.csdnimg.cn/85924d41b6b74690909c7b909273e340.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAbGFvYnV6aGFuZw==,size_20,color_FFFFFF,t_70,g_se,x_16" 
+                alt="1.1" width="800" height="400">
+            </p>
+    
+            <p>
+                3.打开关卡蓝图，然后双击进入时间轴
+            </p>
+            <p>
+                <img src="https://img-blog.csdnimg.cn/dceaf205fbe24187a79d3882e19200a0.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAbGFvYnV6aGFuZw==,size_20,color_FFFFFF,t_70,g_se,x_16" 
+                alt="1.1" width="800" height="400">
+            </p>
+    
+            <p>
+                4.将时间轴上的两个帧节点的值改为-90和0，更改后编译保存，此时的自动门就很nice
+            </p>
+            <p>
+                <img src="https://img-blog.csdnimg.cn/fc3c7974af7e4f09b47b71f0b3b7bedd.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAbGFvYnV6aGFuZw==,size_20,color_FFFFFF,t_70,g_se,x_16" 
+                alt="1.1" width="800" height="400">
+            </p>
+
+            <h3>
+                建议：
+            </h3>
+            <p>
+                现在这样设置门的旋转其实比较繁琐，后边会有更加简单和实用的方法
+            </p>
+        </div>
+
+        <hr>
+    <div>
+        <h2>
+            4.房间内墙壁透明
+            <a name="4.房间内墙壁透明"></a>
+        </h2>
+        <p>
+            这个问题有几种可能性造成：
+            <br>
+            1.未给加入的盒体点击中空属性。
+            <br>
+            2.没有添加材质
+        </p>
+        <h3>
+            修改方法：
+        </h3>
+        <p>
+            给透明的一面添加白色材质即可
+        </p>
+        <h3>
+            操作：
+        </h3>
+
+        <p>
+            1.把白色材质拖过去，完成
+        </p>
+        <p>
+            <img src="https://img-blog.csdnimg.cn/bbe40aa03ae34cd4b712b656d1d080be.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAbGFvYnV6aGFuZw==,size_20,color_FFFFFF,t_70,g_se,x_16" 
+            alt="1.1" width="800" height="400">
+        </p>
+
+        <h3>
+            建议：
+        </h3>
+        <p>
+            ->其实上述修改方法是不靠谱的，这个方法只是我随便一试就成功了。
+            <br>
+            ->因为房子和地板及其他的一些东西已经合并在一起了，按道理来说，添加材质后，所有物件都应该变成白色材质。
+            <br>
+            ->但事实是没有全部变白，我也不太清楚原因。
+            <br>
+            ->靠谱的做法：下次在开始设计时，先给盒体添加中空选项，如下图所示：
+            <br>
+            <img src="https://img-blog.csdnimg.cn/815731ecc42e4e079567d2a18a43fb96.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAbGFvYnV6aGFuZw==,size_20,color_FFFFFF,t_70,g_se,x_16" 
+            alt="1.1" width="800" height="400">
+        </p>
+    </div>
+
+
+    <hr>
+    <div>
+        <h2>
+            5.光照需要重建
+            <a name="5.光照需要重建"></a>
+        </h2>
+        <p>
+            看着很烦
+        </p>
+        <h3>
+            修改方法：
+        </h3>
+        <p>
+            将场景中所有带light的组件的移动性改为可移动即可
+        </p>
+        <img src="https://img-blog.csdnimg.cn/c38f50737f9241988f3c9b29471a5a49.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAbGFvYnV6aGFuZw==,size_20,color_FFFFFF,t_70,g_se,x_16" 
+            alt="1.1" width="800" height="400">
+    </div>
+
+
+    <hr>
+    <div>
+        <h2>
+            6.人物进不去门
+            <a name="6.人物进不去门"></a>
+        </h2>
+        <p>
+            人的碰撞体积大于门框的大小，所以会卡住进不去
+        </p>
+        <h3>
+            修改方法：
+        </h3>
+        <p>
+            把人物稍微缩小一点点是最简单的修改方法，缩小一点点对人物动画影像不大
+        </p>
+
+        <h3>
+            建议：
+        </h3>
+        <p>
+            以后做门的时候先把门框拉大一点，测试人能过去后再制作房子
+        </p>
+    </div>
+    
+
+</div>
+
+    
+    <div id="lis">
+        <aside style="position: fixed; bottom: 0px; z-index: 99; right: -80px; width: 300px; top: auto; height: 750px;">
+            <form action="">
+                <h1 id="list">
+                    目录
+                </h1>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（点击跳转）
+                <p>
+                    <a href="#1.人物直接掉下去">1.人物直接掉下去</a>
+                </p>
+                <p>
+                    <a href="#2.场景大小没有规划好">2.场景大小没有规划好</a>
+                </p>
+                <p>
+                    <a href="#3.自动门开合方式不对">3.自动门开合方式不对</a>
+                </p>
+                <p>
+                    <a href="#4.房间内墙壁透明">4.房间内墙壁透明</a>
+                </p>
+                <p>
+                    <a href="#5.光照需要重建">5.光照需要重建</a>
+                </p>
+                <p>
+                    <a href="#6.人物进不去门">6.人物进不去门</a>
+                </p>
+            </form>
+        </aside>
+    </div>
+    
+</body>
+</html>
