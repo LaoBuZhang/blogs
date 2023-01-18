@@ -1455,39 +1455,3 @@ js代码
 ~~~
 
 
-
-
-
-
-
-绑定事件：
-
-1. 直接在html标签上，指定事件的属性，属性值就是js代码
-   1. 事件：onclick    单击事件，是标签的一个属性，后边填js代码
-2. 通过js获取元素对象，指定事件属性，设置一个函数
-
-~~~html
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charaset="UTF-8">
-        <title>事件绑定</title>
-
-        <script>
-            function fun(){
-                alert("我被点了");
-                alert("我又被点了");
-            }
-        </script>
-        
-    </head>
-
-    <body>
-        <img id="light" src="img/1.jpg" onclick="fun();">
-
-
-
-    </body>
-</html>
-~~~
-
