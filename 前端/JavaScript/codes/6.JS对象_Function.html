@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charaset="UTF-8">
+        <title>function</title>
+
+        <script>
+
+            //1. var fun=new Function(形式参数列表,方法体);(基本不用)
+            var fun1=new Function("a","b","alert(a);");
+            fun1(3,4);
+
+            /*
+            2.
+            function 方法名称(形式参数列表){
+                方法体
+            }
+            */
+           function fun2(a,b){//形参的类型可以不写
+                alert(a+b);
+           }
+           fun2(3,4);//函数的调用
+
+           /*
+           3.
+            var 方法名=function(形式参数列表){
+                方法体
+            }
+           */
+            var fun3=function(a,b,c){
+                alert(a+b+c);
+            }
+            fun3(4,5,6);
+
+
+
+            alert(fun3.length);
+
+
+
+            fun3=function(a,b,c){
+                alert(a*b*c);
+            }
+            fun3(4,5,6);
+
+
+
+
+            function sum(){
+                var sum=0;
+                for(var i=0;i<arguments.length;i++){
+                    sum+=arguments[i];
+                }
+                return sum;
+            }
+            alert(sum(1,2,3,4,5));
+
+        </script>
+        
+    </head>
+
+    <body>
+
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charaset="UTF-8">
+        <title>loght</title>
+        
+    </head>
+
+    <body>
+        <script>
+            var flag=true
+            
+            function change(){
+                var light=document.getElementById("img")
+                if(flag==true){
+                    flag=false
+                    light.src="img/off.gif"
+                }else{
+                    flag=true
+                    light.src="img/on.gif"
+                }
+            }
+        </script>
+        <img id="img" src="img/on.gif" onclick="change();">
+    </body>
+</html>

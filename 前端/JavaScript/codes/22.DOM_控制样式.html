@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charaset="UTF-8">
+        <title>HTMLDOM</title>
+
+
+        <style>
+            .d1{
+                border: 1px solid yellow;
+                height: 100px;
+                width: 100px;
+            }
+            .d2{
+                border: 1px solid red;
+                height: 200px;
+                width: 200px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="div1">
+            div1
+        </div>
+        <div id="div2">
+            div2
+        </div>
+        
+        <script>
+            var div1=document.getElementById("div1")
+            div1.style.border="1px solid red"
+            div1.style.fontSize="50px"
+
+            var div2=document.getElementById("div2")
+            div2.className="d1"
+        </script>
+
+    </body>
+</html>

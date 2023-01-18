@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charaset="UTF-8">
+        <title>Window</title>
+
+        
+        
+    </head>
+
+    <body>
+        <img id="img" src="img/on.gif">
+
+        <script>
+            var flag=false;
+            var pic=document.getElementById("img");
+
+            setInterval(fun,500);
+            function fun(){
+                if(flag==false){
+                    pic.src="img/off.gif";
+                    flag=true;
+                }else{
+                    pic.src="img/on.gif";
+                    flag=false;
+                }
+            }
+        </script>
+
+    </body>
+</html>

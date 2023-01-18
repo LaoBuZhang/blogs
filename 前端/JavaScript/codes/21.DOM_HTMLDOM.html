@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charaset="UTF-8">
+        <title>HTMLDOM</title>
+
+
+        
+    </head>
+
+    <body>
+        <div id="div1">
+            div
+        </div>
+        
+        <script>
+            var div1=document.getElementById("div1")
+            var div1_innerHTML=div1.innerHTML
+            alert(div1_innerHTML)
+            div1.innerHTML="变了一下<input type='text'>"
+            div1.innerHTML+="加了一点<input type='text'>"
+        </script>
+
+    </body>
+</html>

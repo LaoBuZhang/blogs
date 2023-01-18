@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charaset="UTF-8">
+        <title>History</title>
+
+        
+        
+    </head>
+
+    <body>
+        <input type="button" id="btn" value="获取历史记录个数">
+        <input type="button" id="back" value="back">
+        <input type="button" id="forward" value="forward">
+        <input type="button" id="go" value="go">
+        
+        <script>
+            var btn=document.getElementById("btn")
+            btn.onclick=function(){
+                alert(history.length)
+            }
+
+            var back=document.getElementById("back")
+            back.onclick=function(){
+                history.back()
+            }
+
+            var forward=document.getElementById("forward")
+            forward.onclick=function(){
+                history.forward()
+            }
+
+            var go=document.getElementById("go")
+            go.onclick=function(){
+                history.go(2)
+            }
+            
+        </script>
+
+    </body>
+</html>

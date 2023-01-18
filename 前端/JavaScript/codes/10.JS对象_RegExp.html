@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charaset="UTF-8">
+        <title>RegExp</title>
+
+        <script>
+            //1.  var reg=new RegExp("正则表达式");
+            var reg1=new RegExp("^\\w{1,12}$");
+
+            //2.  var reg=/正则表达式/;
+            var reg2=/^\w{1,12}$/;
+
+            // alert(reg1);
+            // alert(reg2);
+
+            var username="zhangsan";
+            alert(reg1.test(username));
+            alert(reg2.test(username));
+        </script>
+        
+    </head>
+
+    <body>
+
+    </body>
+</html>

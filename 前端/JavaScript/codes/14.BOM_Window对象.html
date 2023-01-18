@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charaset="UTF-8">
+        <title>Window</title>
+
+        
+        
+    </head>
+
+    <body>
+        <input id="openBtn" type="button" value="打开窗口">
+        <input id="closeBtn" type="button" value="关闭窗口">
+
+        <script>
+             var flag=confirm("点一下");
+             if(flag){
+                 alert("来了老弟");
+             }else{
+                 alert("别手抖");
+             }
+
+            
+            var s=prompt("请随便输入点啥");
+            alert(s);
+
+
+            //打开一个新的浏览器窗口
+            var openBtn=document.getElementById("openBtn");
+            var w;
+            openBtn.onclick=function(){
+                w=open("http://www.baidu.com");
+            }
+            closeBtn.onclick=function(){
+                w.close();
+            }
+
+
+
+
+
+            var id=setTimeout(fun,3000);
+            clearTimeout(id);
+            function fun(){
+                alert("boom");
+            }
+
+            var id1=setInterval(fun,2000);
+            clearInterval(id1);
+        </script>
+
+    </body>
+</html>

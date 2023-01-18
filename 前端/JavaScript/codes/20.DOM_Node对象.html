@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charaset="UTF-8">
+        <title>Node</title>
+
+        <style>
+            div{
+                border: 1px solid red;
+            }
+            #div1{
+                width: 200px;
+                height: 200px;
+            }
+            #div2{
+                width: 100px;
+                height: 100px;
+            }
+            #div3{
+                width: 100px;
+                height: 100px;
+            }
+        </style>
+        
+    </head>
+
+    <body>
+        <div id="div1">
+            <div id="div2">div2</div>
+            div1
+        </div>
+        <a href="javascript:void(0);" id="del">删除子节点</a>
+        <a href="javascript:void(0);" id="add">添加子节点</a>
+        <a href="javascript:void(0);" id="replace">替换子节点</a>
+        
+        
+        <script>
+            var del=document.getElementById("del")
+            del.onclick=function(){
+                var div1=document.getElementById("div1")
+                var div2=document.getElementById("div2")
+                div1.removeChild(div2)
+            }
+
+            var add=document.getElementById("add")
+            add.onclick=function(){
+                var div1=document.getElementById("div1")
+                var div3=document.createElement("div")
+                div3.setAttribute("id","div3")
+                div1.appendChild(div3)
+            }
+
+            var replace=document.getElementById("replace")
+            replace.onclick=function(){
+                var div1=document.getElementById("div1")
+                var div2=document.getElementById("div2")
+                var div3=document.createElement("div")
+                div3.setAttribute("id","div3")
+                div1.replaceChild(div3,div2)
+            }
+
+
+            var div2=document.getElementById("div2")
+            alert(div2.parentNode)
+            
+        </script>
+
+    </body>
+</html>

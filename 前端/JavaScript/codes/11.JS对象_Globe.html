@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charaset="UTF-8">
+        <title>Globe</title>
+
+        <script>
+            var str1="http://www.baidu.com?wd=老部长";
+            var encode1=encodeURI(str1);//http://www.baidu.com?wd=%E8%80%81%E9%83%A8%E9%95%BF
+            document.write(encode1+"<br>");
+            var str2=decodeURI(encode1);
+            document.write(str2+"<br>");
+
+
+            var str1="http://www.baidu.com?wd=老部长";
+            var encode1=encodeURIComponent(str1);//http%3A%2F%2Fwww.baidu.com%3Fwd%3D%E8%80%81%E9%83%A8%E9%95%BF
+            document.write(encode1+"<br>");
+            var str2=decodeURIComponent(encode1);
+            document.write(str2+"<br>");
+
+
+
+            var s="123abc";
+            document.write(parseInt(s)+1);//124
+            var s1="a123abc";
+            document.write(parseInt(s1)+1);//NaN
+
+
+
+            document.write(NaN==NaN);
+            document.write(isNaN("abc"));//true
+
+
+
+            var strr="alert(123)";
+            document.write(strr);//alert(123)
+            eval(strr);//123
+        </script>
+        
+    </head>
+
+    <body>
+
+    </body>
+</html>
