@@ -1264,7 +1264,201 @@ var len=history.length
 
 ## 7.事件
 
+### 1.概念
+
 功能：某些组件被执行了某些操作后，触发某些代码的执行
+
+
+
+### 2.事件
+
+某些操作，如单击，双击，键盘按下，鼠标移动等
+
+**常见事件**
+
+#### 2.1.点击事件
+
+onclick 单击
+
+ondblclick 双击
+
+
+
+#### 2.2.焦点事件
+
+onblur 元素失去焦点
+
+- 一般用于表单校验
+- 离开文本框后便进行校验并显示校验信息
+
+onfocus 元素获得焦点
+
+
+
+例如：搜索框
+
+点击时：
+
+![image-20230118214739785](images/image-20230118214739785.png)
+
+点击外部时：
+
+![image-20230118214803455](images/image-20230118214803455.png)
+
+
+
+
+
+#### 2.3.加载事件
+
+onload 一张页面或者一张图像完成加载
+
+- 一般可以用`window.onload`用来再页面加载完毕时执行一些操作
+
+#### 2.4.鼠标事件
+
+onmousedown 鼠标被按下
+
+- 左键右键和中间都会反应
+
+- 按下后会返回一个参数叫event，通过event可以获取这次点击的一些信息，例如button可以获取点击的是哪一个按键
+
+  ~~~javascript
+  document.getElementById("username").onmousedown = function(event){
+      alert(event.button);
+  }
+  ~~~
+
+onmouseup 鼠标被松开
+
+onmousemove 鼠标被移动
+
+onmouseover 鼠标移到某元素之上
+
+onmouseout 鼠标从元素移开
+
+
+
+#### 2.5.键盘事件
+
+onkeydown 某个键盘按键被按下
+
+- 按下后会返回一个参数叫event，通过event可以获取这次点击的一些信息，例如keyCode可以获取点击的是哪一个按键（返回的是ASCII码）
+
+- 可以用于按下回车（ASCII码为13）提交表单
+
+  ~~~javascript
+  document.getElementById("username").onkeydown = function(event){
+      alert(event.keyCode);
+  }
+  ~~~
+
+onkeyup 某个键盘按键被松开
+
+onkeypress 某个键盘按键被按下并松开
+
+
+
+#### 2.6.选择和改变
+
+onchange 区域的内容被改变
+
+- 可以用于下拉框，做出省市区联动的效果
+
+onselect 文本被选中
+
+
+
+#### 2.7.表单事件
+
+onsubmit 确认按钮被点击
+
+- 可以阻止表单的提交
+
+- 函数返回false即可阻止提交
+
+  - 注意：这里要是采用标签属性进行注册监听，则需要在值里边加上return
+
+  - 否则相当于是onlick之中直接写了一个false
+
+  - checkForm()return的是checkForm这个函数，并没有return onclick这个事件
+
+    ~~~html
+    <script>
+        function checkForm(){
+                return false;
+            }
+    </script>
+    <form action="#" id="form" onclick="return checkForm();">
+    ~~~
+
+    
+
+onreset 重置按钮被点击
+
+
+
+### 3.事件源
+
+组件，如按钮，文本输入框等
+
+其实就是html的标签
+
+
+
+### 4.监听器
+
+代码，事件发生后执行的代码
+
+js代码
+
+
+
+### 5.注册监听
+
+将事件源和监听器绑定在一起
+
+
+
+一般有两种方式
+
+**设置标签属性**
+
+在标签的onclick等属性中直接写入调用函数的代码
+
+~~~html
+<script>
+    function fun(){
+        alert("我被点了");
+        alert("我又被点了");
+    }
+</script>
+<img id="light" src="img/1.jpg" onclick="fun();">
+~~~
+
+
+
+**匿名函数**
+
+先获取DOM对象
+
+然后再设置匿名函数
+
+~~~html
+<img id="light" src="img/1.jpg">
+<script>
+    var light=document.getElementById("light")
+    light.onclick=function(){
+    	...
+    }
+</script>
+~~~
+
+
+
+
+
+
 
 绑定事件：
 
