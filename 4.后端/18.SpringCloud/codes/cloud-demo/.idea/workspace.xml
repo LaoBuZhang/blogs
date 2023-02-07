@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1f978e8a-c77d-47ac-ba66-709bea0f0742" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../JavaSE/Java学习笔记（更新ing）.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-service.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/user-service.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL InnoDB执行update语句/MySQL InnoDB执行update语句过程具体分析.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL InnoDB执行update语句/images/image-20221224111343518.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL InnoDB执行update语句/images/image-20221224112727119.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL InnoDB执行update语句/images/image-20221224113944221.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL InnoDB执行update语句/images/image-20221224114707485.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL InnoDB执行update语句/images/image-20221228220233903.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL InnoDB执行update语句/images/image-20221228222337875.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL InnoDB执行update语句/images/image-20221229121134755.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL InnoDB执行update语句/images/image-20221229122247827.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL InnoDB执行update语句/images/image-20221229122523045.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL InnoDB执行update语句/images/image-20221229123550596.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL InnoDB执行update语句/images/image-20221229130333054.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL InnoDB执行update语句/images/image-20221229130342558.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL InnoDB执行update语句/images/image-20221229150247450.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL InnoDB执行update语句/images/image-20221229151751737.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL InnoDB执行update语句/images/image-20221229153424639.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL InnoDB执行update语句/images/image-20221229154623866.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/MySQL.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/MySQL卸载文档-Windows/MySQL卸载文档-Windows版.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/MySQL卸载文档-Windows/assets/image-20220209203115052.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/MySQL卸载文档-Windows/assets/image-20220209203253220.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/MySQL卸载文档-Windows/assets/image-20220209203345746.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/MySQL卸载文档-Windows/assets/image-20220209203431405.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/MySQL卸载文档-Windows/assets/image-20220209205157019.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/MySQL卸载文档-Windows/assets/image-20220209205401563.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/MySQL安装文档-Windows/MySQL安装.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/MySQL安装文档-Windows/assets/image-20210916184347938.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/MySQL安装文档-Windows/assets/image-20210916184532212.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/MySQL安装文档-Windows/assets/image-20210916184603712.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/MySQL安装文档-Windows/assets/image-20210916184634094.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/MySQL安装文档-Windows/assets/image-20210916184700031.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/MySQL安装文档-Windows/assets/image-20210916184709776.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/MySQL安装文档-Windows/assets/image-20210916184743524.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/MySQL安装文档-Windows/assets/image-20210916184759021.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/MySQL安装文档-Windows/assets/image-20210916184814656.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/MySQL安装文档-Windows/assets/image-20210916184832159.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/MySQL安装文档-Windows/assets/image-20210916184851013.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/MySQL安装文档-Windows/assets/image-20210918161550977.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/MySQL安装文档-Windows/assets/image-20210918161646433.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/MySQL安装文档-Windows/assets/image-20210918161803544.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../MySQL/MySQL安装文档-Windows/assets/image-20210918161954696.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/SSM学习笔记.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/101.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/102.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/103.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/104.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/105.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/106.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/107.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/108.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/109.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/10生命周期接口方式.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/110.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/111.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/112.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/113.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/114.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/115.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/116.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/117.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/118.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/119.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/11setter注入.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/120.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/121.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/122.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/123.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/124.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/125.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/126.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/127.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/129.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/12构造方法注入.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/130.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/131.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/132.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/133.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/134.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/135.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/136.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/137.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/138.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/139.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/13无name构造方法注入.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/140.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/141.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/142.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/143.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/145.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/146.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/14自动装配.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/15集合装配.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/16开启context命名空间.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/17配置文件.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/18创建容器.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/19获取bean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/1SpringFramework系统架构.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/20容器类层次结构图.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/21注解代替bean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/22Component的衍生注解.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/23纯注解开发.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/24Spring配置类.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/25纯注解作用范围和生命周期.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/26注解开发自动装配.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/27Qualifier.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/28注解开发配置文件.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/29注解开发读取配置文件.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/2添加bean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/30注解开发第三方bean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/31注解开发第三方bean简单类型依赖注入.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/32注解开发第三方bean引用类型依赖注入.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/33XML配置和注解配置比较.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/34MyBatis使用流程.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/35Spring整合MyBatis.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/36自动装配Mapper.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/37service调用sql语句.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/38Spring整合Junit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/39通知类通知连接点切入点切面.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/3DI.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/40AOP实现.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/41AOP切入点表达式规范.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/42接入点参数.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/43接入点返回值.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/44接入点抛出异常.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/45Spring事务.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/46设置事务管理器.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/47开启注解式事务驱动.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/48Spring事务角色.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/49Spring事务传播行为属性.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/4bean默认单例.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/50Spring事务回滚.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/51Spring事务相关配置.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/52Spring事务传播行为.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/53.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/54.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/55.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/56.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/57.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/58.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/59.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/5静态工厂.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/61.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/62.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/63.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/65.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/66.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/67.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/68.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/69.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/6实例工厂.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/70.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/71.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/73.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/74.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/75.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/76.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/77.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/78.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/79.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/7bean工厂.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/80.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/81.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/82.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/83.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/85.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/86.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/87.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/88.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/89.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/8bean工厂单例.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/90.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/91.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/92.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/93.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/94.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/95.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/97.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/98.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/99.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SSM/images/9生命周期.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/SpringBoot学习笔记.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210911132335452.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210911133112602.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210911133219847.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210911133532151.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210911134419334.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210911155135008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210911155249493.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210911155916899.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210911160040328.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210911160353534.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210911160541833.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210911160850121.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210911165642280.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210911172200292.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210911173712014.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210911174110687.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210911174650679.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210911175222857.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210911175502834.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210911180828611.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210911181714437.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210911182956629.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210917151314753.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210917161422535.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210917161720855.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210917162512646.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210917162700711.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210917163335913.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210917163557071.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210917163610097.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210917163736458.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210917163818051.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210917163828518.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210917163846243.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210917172736484.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210917180919390.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210917185253557.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210917193910191.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210917194941597.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210917200241282.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210917200805389.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210917201243721.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210917201523669.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210917201922831.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210917213556673.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210917215823697.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210917215913779.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210917215958091.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210917221427930.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210917225019868.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210917225715519.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210917230702072.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210918220338109.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210918220855024.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210918221042947.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210918221511249.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210918221942453.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210918222321402.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210918222607469.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210918232512707.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/assets/image-20210918232904623.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/codes/springboot_01_quickStart/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/codes/springboot_01_quickStart/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/codes/springboot_01_quickStart/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/codes/springboot_01_quickStart/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/codes/springboot_01_quickStart/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/codes/springboot_01_quickStart/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/codes/springboot_01_quickStart/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/codes/springboot_01_quickStart/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/codes/springboot_01_quickStart/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/codes/springboot_01_quickStart/springboot_01_quickStart.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/codes/springboot_01_quickStart/src/main/java/com/itheima/Springboot01QuickStartApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/codes/springboot_01_quickStart/src/main/java/com/itheima/controller/BookController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/codes/springboot_01_quickStart/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/codes/springboot_01_quickStart/src/test/java/com/itheima/Springboot01QuickStartApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/codes/springboot_01_quickStart/target/classes/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/codes/springboot_01_quickStart/target/classes/com/itheima/Springboot01QuickStartApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/codes/springboot_01_quickStart/target/classes/com/itheima/controller/BookController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/codes/springboot_01_quickStart/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/codes/springboot_01_quickStart/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/codes/springboot_01_quickStart/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/codes/springboot_01_quickStart/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/codes/springboot_01_quickStart/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../SpringBoot/codes/springboot_01_quickStart/target/springboot_01_quickstart-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../git学习/Git学习笔记.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../git学习/images/gitBash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../git学习/images/git工作流程.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../git学习/images/git文件提交流程.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../git学习/images/git文件状态.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../git学习/images/git运作模式.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../git学习/images/idea的git1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../git学习/images/idea的git2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../git学习/images/分支使用原则.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../git学习/images/创建rc源文件.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../git学习/images/解决冲突.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2JrF9zg7Q8UOfrE8Vt5ws99alZu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "E:/codes/blogs/后端/Microservices Technology Stack/sentinel/codes/cloud-demo",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2632184",
+    "spring.configuration.checksum": "582e4ccef8cb1247e68f8fa0ca7cafb5",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\1\Desktop\微服务技术栈\SpringCloud\codes\服务拆分和远程调用\cloud-demo\feign-api\src\main\java\cn\itcast\feign" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.itcast.feign.pojo" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.GatewayApplication">
+    <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.itcast.eureka.EurekaApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.itcast.eureka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.itcast.gateway.GatewayApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.itcast.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="order-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.itcast.order.OrderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.itcast.user.UserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.itcast.user.UserApplication" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8082" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication3" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.itcast.user.UserApplication" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8083 -Dspring.cloud.nacos.discovery.cluster-name=SH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Spring Boot.EurekaApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f978e8a-c77d-47ac-ba66-709bea0f0742" name="Changes" comment="" />
+      <created>1672828150045</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672828150045</updated>
+      <workItem from="1672828151529" duration="1557000" />
+      <workItem from="1672829729042" duration="247000" />
+      <workItem from="1672829985511" duration="1216000" />
+      <workItem from="1672838451280" duration="2499000" />
+      <workItem from="1672891901358" duration="10553000" />
+      <workItem from="1672925882780" duration="3039000" />
+      <workItem from="1672978731704" duration="7840000" />
+      <workItem from="1675424087118" duration="830000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
