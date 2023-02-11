@@ -274,7 +274,7 @@ MongoDB javascript shell是一个基于javascript的解释器，故是支持js�
 
 到MongoDB官网下载MongoDB Compass， 
 
-地址：https://www.mongodb.com/download-center/v2/compass?initial=true
+地址：[MongoDB Compass Download](https://www.mongodb.com/try/download/compass)
 
 
 
