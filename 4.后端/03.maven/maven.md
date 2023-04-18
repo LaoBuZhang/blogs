@@ -39,14 +39,45 @@ mvn [plugin-name]:[goal-name]
 
 
 
-## 3.maven配置
+## 3.maven下载
+
+### 下载
 
 [Maven – Download Apache Maven](https://maven.apache.org/download.cgi)
 
 1. 下载
-2. 配置JAVA_HOEM
-3. 配置MAVEN_HOME
-4. path中添加%MAVEN_HOME%/bin
+2. 配置JAVA_HOEM，地址为JDK的文件夹
+3. 配置MAVEN_HOME，地址为下载的zip文件的解压地址
+4. Path中添加%MAVEN_HOME%/bin
+
+
+
+### 配置本地仓库
+
+默认地址为C:/Users/18837/.m2
+
+可在/conf/settings.xml中更改
+
+加上此行即可
+
+![img](file://C:\Users\laobuzhang\codes\articles\blogs\4.后端\03.maven\images\更改仓库位置.png?lastModify=1681821540)
+
+
+
+### 修改远程仓库
+
+使用maven的服务器很慢，可以修改为国内镜像网站
+
+同样是在settings.xml中加入
+
+```
+<mirror>
+    <id>nexus-aliyun</id>
+    <mirrorOf>central</mirrorOf>
+    <name>Nexus aliyun</name>
+    <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+</mirror>
+```
 
 
 
@@ -90,34 +121,7 @@ mvn [plugin-name]:[goal-name]
 
 
 
-### 配置本地仓库
 
-默认地址为C:/Users/18837/.m2
-
-可在E:/apache-maven-3.8.6/conf/settings.xml中更改
-
-加上此行即可
-
-![](./images/更改仓库位置.png)
-
-
-
-### 修改远程仓库
-
-使用maven的服务器很慢，可以修改为国内镜像网站
-
-同样是在settings.xml中加入
-
-~~~xml
-<mirror>
-    <id>nexus-aliyun</id>
-    <mirrorOf>central</mirrorOf>
-    <name>Nexus aliyun</name>
-    <url>http://maven.aliyun.com/nexus/content/groups/public</url>
-</mirror>
-~~~
-
-![](./images/切换源.png)
 
 ## 5.maven工程
 
@@ -652,6 +656,4 @@ build标签->plugins标签->plugin标签->插件内容
   ~~~
 
 
-
-## 8.
 
