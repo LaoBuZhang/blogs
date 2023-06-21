@@ -60,7 +60,7 @@ mvn [plugin-name]:[goal-name]
 
 加上此行即可
 
-![img](file://C:\Users\laobuzhang\codes\articles\blogs\4.后端\03.maven\images\更改仓库位置.png?lastModify=1681821540)
+![更改仓库位置](assets/更改仓库位置.png)
 
 
 
