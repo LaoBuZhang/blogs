@@ -58,6 +58,32 @@ nginx也可以用作正向代理
 
 ## nginx安装
 
+### yum安装（推荐）
+
+首先执行命令杀死之前可能的nginx进程
+
+~~~bash
+sudo pkill nginx
+~~~
+
+安装nginx
+
+~~~bash
+yum intsall nginx
+~~~
+
+
+
+之后就可以使用systemctl管理nginx了
+
+
+
+
+
+
+
+### 下载安装
+
 将ngnix压缩包放到/root目录并解压
 
 
@@ -84,7 +110,7 @@ yum install -y zlib zlib-devel
 
 
 
-执行安装(后边指定目录)
+执行安装(后边指定nginx要安装的目录，和解压目录不同)
 
 ~~~bash
 ./configure --prefix=/usr/local/nginx
@@ -92,7 +118,7 @@ yum install -y zlib zlib-devel
 
 
 
-最后执行make和make install
+最后执行make和make install（在解压目录中）
 
 ~~~bash
 make
