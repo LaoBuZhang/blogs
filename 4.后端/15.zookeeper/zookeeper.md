@@ -412,7 +412,7 @@ lock.acquire(3, TimeUnit.SECONDS);//设置重试获取锁操作的次数
 
 
 
-Ticket2306类，充当12306的角色
+Ticket12306类，充当12306的角色
 
 ~~~java
 package com.itheima.curator;

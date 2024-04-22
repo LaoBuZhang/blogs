@@ -226,6 +226,8 @@ elasticsearch是面向**文档（Document）**存储的，可以是数据库中�
 
 而Json文档中往往包含很多的**字段（Field）**，类似于数据库中的列。
 
+可以把一个文档看作mysql中的一行
+
 
 
 ### 1.3.2.索引和映射
@@ -442,7 +444,7 @@ kibana中提供了一个DevTools界面：
 docker exec -it es /bin/bash
 
 # 在线下载并安装
-./bin/elasticsearch-plugin  install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v7.12.1/elasticsearch-analysis-ik-7.12.1.zip
+./bin/elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v7.12.1/elasticsearch-analysis-ik-7.12.1.zip
 # elasticsearch-plugin是es的命令，可以自动执行安装操作
 
 #退出
